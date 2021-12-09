@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service("carModelJpaService")
+
 @Transactional(readOnly=false, value = "jpaTransactionManager")
 public class CarModelJpaServiceImpl implements CarModelService {
     @Autowired
